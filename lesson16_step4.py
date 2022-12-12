@@ -5,10 +5,10 @@ from selenium.webdriver.chrome.service import Service
 import time
 
 
-link = "http://suninjuly.github.io/simple_form_find_task.html"
+link = "https://www.saucedemo.com/"
+browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 try:
-    browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     browser.get(link)
 
     input1 = browser.find_element(By.CSS_SELECTOR, '[name="first_name"]')
